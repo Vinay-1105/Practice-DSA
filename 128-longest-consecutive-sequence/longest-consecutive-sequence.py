@@ -17,7 +17,7 @@ class Solution:
             return 0
         
         longest = 1
-        seen = set(nums)
+        seen = set()
 
         for i in range(n):
             seen.add(nums[i])
