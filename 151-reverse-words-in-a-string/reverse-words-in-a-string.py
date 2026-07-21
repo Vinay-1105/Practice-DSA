@@ -3,4 +3,13 @@ class Solution:
         # words = s.split()
         # return " ".join(words[::-1])
 
-        return " ".join(reversed(s.split()))
+        # return " ".join(reversed(s.split()))
+
+        words = s.split()
+        ans = []
+
+        for i in range(len(words) - 1, -1, -1):
+            ans.append(words[i])
+            if i != 0:
+                ans.append(" ")
+        return "".join(ans)
