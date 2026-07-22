@@ -7,4 +7,3 @@ class Solution:
         for ch in sorted_char:
             ans += ch * count[ch]
         return ans
-        
