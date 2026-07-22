@@ -1,11 +1,12 @@
 class Solution(object):
     def isIsomorphic(self, s, t):
-        map1 = []
-        map2 = []
+        s1 = []
+        s2 = []
         for idx in s:
-            map1.append(s.index(idx))
+            s1.append(s.index(idx))
         for idx in t:
-            map2.append(t.index(idx))
-        if map1 == map2:
+            s2.append(t.index(idx))
+        if s1 == s2:
             return True
         return False
+        
