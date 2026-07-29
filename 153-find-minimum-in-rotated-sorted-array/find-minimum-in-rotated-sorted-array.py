@@ -9,4 +9,7 @@ class Solution:
                 low = mid + 1
             else:
                 high = mid
-        return nums[low]       
+        return nums[low]
+
+        nums.sort()
+        return nums[0]
