@@ -1,7 +1,5 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        # nums.sort()
-        # return nums[0]
         n = len(nums)
         low = 0
         high = n - 1
@@ -9,6 +7,6 @@ class Solution:
             mid = (low + high) // 2
             if nums[mid] > nums[high]:
                 low = mid + 1
-            else: 
+            else:
                 high = mid
-        return nums[low]
+        return nums[low]       
