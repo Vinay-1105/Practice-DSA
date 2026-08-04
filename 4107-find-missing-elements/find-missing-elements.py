@@ -3,9 +3,9 @@ class Solution:
         seen = set(nums)
         mn = min(nums)
         mx = max(nums)
+        res = []
 
-        result = []
         for i in range(mn, mx + 1):
             if i not in seen:
-                result.append(i)
-        return result        
+                res.append(i)
+        return res
