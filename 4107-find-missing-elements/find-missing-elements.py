@@ -5,7 +5,7 @@ class Solution:
         mx = max(nums)
 
         result = []
-        for x in range(mn, mx + 1):
-            if x not in seen:
-                result.append(x)
+        for i in range(mn, mx + 1):
+            if i not in seen:
+                result.append(i)
         return result        
