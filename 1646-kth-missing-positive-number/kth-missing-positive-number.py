@@ -7,4 +7,3 @@ class Solution:
             else:
                 break
         return k
-        
