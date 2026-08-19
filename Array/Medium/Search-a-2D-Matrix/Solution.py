@@ -1,5 +1,8 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        # flattened the 2D matrix into 1D
+        # In real problem it cannot be flattened, but we can try to think it in the mind
+        # and imagine it as flattened
         n = len(matrix)
         m = len(matrix[0])
         low = 0
