@@ -8,8 +8,8 @@ class Solution:
         prev = None
         curr = head
         while curr:
-            next_node = curr.next #Save the node so that we don't lose it when we reverse it
-            curr.next = prev #Reverse 
-            prev = curr #Move prev
-            curr = next_node #Move curr
+            next_node = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next_node
         return prev
