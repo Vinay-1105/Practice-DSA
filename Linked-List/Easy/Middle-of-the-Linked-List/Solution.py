@@ -10,7 +10,7 @@ class Solution:
         while temp:
             cnt += 1
             temp = temp.next
-        mid = (cnt//2)+1
+        mid = (cnt//2) + 1
         temp = head
         while temp:
             mid = mid-1
