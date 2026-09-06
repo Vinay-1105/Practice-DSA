@@ -13,3 +13,4 @@ class Solution:
                 return temp
             seen.add(temp)
             temp = temp.next
+        return None
