@@ -12,8 +12,9 @@ class Solution:
             arr.append(curr.val)
             curr = curr.next
         
+        # Using Two-pointer approach
         left = 0
-        right = len(arr)-1
+        right = len(arr) - 1
         while left < right:
             if arr[left] != arr[right]:
                 return False
