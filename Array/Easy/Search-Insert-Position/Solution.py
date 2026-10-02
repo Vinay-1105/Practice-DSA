@@ -1,8 +1,8 @@
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
+    def searchInsert(self, nums: list[int], target: int) -> int:
         n = len(nums)
         low = 0
-        high = n - 1
+        high = n-1
         while low <= high:
             mid = (low+high) // 2
             if nums[mid] == target:
