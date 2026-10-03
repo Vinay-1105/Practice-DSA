@@ -10,3 +10,4 @@ class Solution:
             if hashMap[s[ch]] == 1:
                 return ch
         return -1
+        
