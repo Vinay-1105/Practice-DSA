@@ -4,6 +4,7 @@ class Solution:
         ansLen=0
 
         for i in range(len(s)):
+            # odd-length palindromes
             l=i
             r=i
             while l >= 0 and r < len(s) and s[l] == s[r]:
@@ -13,6 +14,7 @@ class Solution:
                 l-=1
                 r+=1
             
+            # even-length palindromes
             l=i
             r=i+1
             while l >= 0 and r < len(s) and s[l] == s[r]:
