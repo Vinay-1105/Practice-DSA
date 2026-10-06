@@ -1,0 +1,42 @@
+# [Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+**Topics:** Hash Table, String, Counting
+
+---
+
+The **beauty** of a string is the difference in frequencies between the most frequent and least frequent characters.
+
+	- For example, the beauty of `"abaacc"` is `3 - 1 = 2`.
+
+Given a string `s`, return _the sum of **beauty** of all of its substrings._
+
+ 
+
+**Example 1:**
+
+```
+Input: s = "aabcb"
+Output: 5
+Explanation: The substrings with non-zero beauty are ["aab","aabc","aabcb","abcb","bcb"], each with beauty equal to 1.
+```
+
+**Example 2:**
+
+```
+Input: s = "aabcbaa"
+Output: 17
+```
+
+ 
+
+**Constraints:**
+
+	- `1 <= s.length <= 500`
+
+	- `s` consists of only lowercase English letters.
+
+---
+
+*Synced automatically by **GetLeet** — inspired by [LeetSync](https://github.com/LeetSync/LeetSync), the original LeetCode → GitHub sync extension. 🙏*
