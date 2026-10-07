@@ -1,5 +1,7 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        # right pointer to iterate through each characters..
+        # left pointer to store values in hashmap
         max_len=0
         l=0
         res={}
