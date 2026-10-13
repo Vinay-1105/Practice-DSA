@@ -1,14 +1,15 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # # pehle alphanumeric characters ko extract
-        # # fir resulting string ko lower case mai convert 
-        # # lastly, reversing the string and compare with the original string
-        res=""
-        for ch in s:
-            if ch.isalnum():
-                res+=ch
-
-        res=res.lower()
-        if res==res[::-1]:
-            return True
-        return False      
+        # Using two pointer approach
+        l=0
+        r=len(s)-1
+        while l<r:
+            while l<r and not s[l].isalnum():
+                l+=1
+            while l<r and not s[r].isalnum():
+                r-=1
+            if s[l].lower() != s[r].lower():
+                return False
+            l+=1
+            r-=1
+        return True  
