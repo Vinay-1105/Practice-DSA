@@ -3,10 +3,10 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        # Using two pointer approach
-        l = 0
-        r = len(s)-1
-        while l<r:
-            s[l], s[r]=s[r], s[l]
-            l+=1
-            r-=1
+        #Two-pointer approach
+        left=0
+        right=len(s)-1
+        while left<right:
+            s[left], s[right]=s[right], s[left]
+            left+=1
+            right-=1
