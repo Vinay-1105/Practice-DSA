@@ -3,9 +3,12 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        n=len(matrix)
-        for i in range(n):
-            for j in range(i+1,n):
+    #first transpose the matrix by swapping rows with columns, and reverse eachrow.
+        row=len(matrix)
+        col=len(matrix[0])
+
+        for i in range(row):
+            for j in range(i+1, col):
                 matrix[i][j], matrix[j][i]=matrix[j][i], matrix[i][j]
-        for i in range(n):
-            matrix[i].reverse()
+        for k in range(row):
+            matrix[k].reverse()
