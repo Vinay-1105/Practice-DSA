@@ -1,6 +1,13 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # Using two pointer approach
+        # ans=""
+        # for ch in s:
+        #     if ch.isalnum():
+        #         ans+=ch
+        # ans=ans.lower()
+        # if ans==ans[::-1]:
+        #     return True
+        # return False
         l=0
         r=len(s)-1
         while l<r:
@@ -8,8 +15,8 @@ class Solution:
                 l+=1
             while l<r and not s[r].isalnum():
                 r-=1
-            if s[l].lower() != s[r].lower():
+            if s[l].lower()!=s[r].lower():
                 return False
             l+=1
             r-=1
-        return True  
+        return True 
