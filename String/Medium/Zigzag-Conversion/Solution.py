@@ -5,8 +5,8 @@ class Solution:
         i=0
         d=1
         rows=[[] for _ in range(numRows)]
-        for ch in s:
-            rows[i].append(ch)
+        for c in s:
+            rows[i].append(c)
             if i==0:
                 d=1
             elif i==numRows-1:
